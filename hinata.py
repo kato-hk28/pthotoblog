@@ -58,7 +58,7 @@ def save_photo(img_path,image):
 
 def send_photo(img_path,name,title):
     line_url = "https://notify-api.line.me/api/notify"
-    access_token = 'your line access_token'
+    access_token = 'your line access_token' #LINE APIから自分のアクセストークンを取得して置換する
     headers = {'Authorization':'Bearer ' + access_token}
     message = '\n[' + name.strip() + ']\n' + title.strip()
     payload = {'message':message}
